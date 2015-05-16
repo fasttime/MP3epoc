@@ -81,7 +81,7 @@
 		322ECDB01818784700AD337A /* processFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = processFile.h; sourceTree = "<group>"; };
 		323C5C401834346900315403 /* man */ = {isa = PBXFileReference; lastKnownFileType = folder; path = man; sourceTree = "<group>"; };
 		32419712182DEB6C0090D6DE /* findAllFilePaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = findAllFilePaths.h; sourceTree = "<group>"; };
-		3287865A17F91A550007EB22 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		3287865A17F91A550007EB22 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		328F0F5218148236008639EE /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		328F0F541814823B008639EE /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		328F0F551814823D008639EE /* it */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				32A257341826E56300CD6F95 /* cleanup.command */,
-				3287865A17F91A550007EB22 /* README.txt */,
+				3287865A17F91A550007EB22 /* README.md */,
 				3290987C17E264890082D54B /* CoreFoundation.framework */,
 				3290982B17DCAE4F0082D54B /* MP3epoc */,
 				32D0467A17E81C8E00984B2D /* Unit Tests C++ */,
