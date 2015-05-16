@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Help" xml:space="preserve">
+    <value>
+Zeigt die Attribute von MP3‐Dateien oder ändert sie.
+
+Gebrauch:
+  MP3EPOC [{0}L|{0}S] [{0}W] [{0}F] [+P|-P] [+C|-C] [+O|-O] [{0}E0|{0}E1|{0}E2|{0}Ex] Dateien
+
+  {0}L        Zeigt die Attribute im erweiterten Format.
+  {0}S        Zeigt die Attribute im kompakten Format.
+  {0}W        Liest gesamte Dateien, nicht nur die Schlüssel‐Frames.
+  {0}F        Erster Frame ist Schlüssel‐Frame (ältere Winamp‐Versionen).
+  +         Setzt ein Attribut oder zeigt die Dateien wo es gesetzt ist.
+  -         Löscht ein Attribut oder zeigt die Dateien wo es nicht gesetzt ist.
+  P         Attribut "Privat".
+  C         Attribut "Copyright".
+  O         Attribut "Original".
+  {0}E0       Entfernt die Emphase oder zeigt die Dateien ohne Emphase.
+  {0}E1       Setzt oder zeigt die Dateien mit Emphase auf 50/15 microsec.
+  {0}E2       Setzt oder zeigt die Dateien mit Emphase auf CCITT j. 17.
+  {0}Ex       Zeigt die Dateien mit ungültiger Emphase.
+  Dateien   Die zu verarbeitende(n) Datei(en) (Platzhalter sind erlaubt).
+
+Attributangaben werden vom Zeichen + oder - eingeleitet und können verschiedene Attribute gleichzeitig angeben wie in +PO oder -OCP; die Optionen {0}E0, {0}E1, {0}E2 und {0}Ex gelten auch als Attributangaben, sie können jedoch nicht kombiniert werden.
+
+Enthält die Befehlszeile Attributangaben ohne die Optionen {0}L, {0}S, {0}W oder {0}F, so schreibt MP3epoc die neuen Attributeinstellungen in jede angegebene MP3‐Datei.
+Enthält die Befehlszeile Attributangaben zusammen mit den Optionen {0}L, {0}S, {0}W oder {0}F, so zeigt MP3epoc die den angegebenen Attributen entsprechenden MP3‐Dateien ohne sie zu ändern.
+Enthält die Befehlszeile keine Attributangaben, so zeigt MP3epoc die Attribute der MP3‐Dateien ohne sie zu ändern: in diesem Fall werden Attribute stets im erweiterten Format angezeigt, wenn die Option {0}S nicht explizit angegeben ist.
+Einige Beispiele:
+
+  &gt; MP3EPOC *.MP3
+  Zeigt im erweiterten Format die Attribute aller MP3‐Dateien im aktuellen Verzeichnis.
+
+  &gt; MP3EPOC -C +O "Madonna - Material Girl.mp3"
+  Löscht das Attribut "Copyright" und setzt das Attribut "Original" in allen Frames der Datei "Madonna - Material Girl.mp3".
+
+  &gt; MP3EPOC {0}S {0}W {0}E1 "{1}{2}*Mozart*.MP3"
+  Zeigt im kompaktem Format die Attribute aller MP3‐Dateien im Verzeichnis "{1}" die das Wort "Mozart" im Namen enthalten und die Emphase auf 50/15 microsec in allen Frames gestzt haben.
+  
+  &gt; MP3EPOC -PCO {0}E0 "{3}My-Host{2}Shared MP3s{2}*"
+  Löscht die Attribute "Privat", "Copyright" und "Original" und entfernt die Emphase von allen Frames aller Dateien im Netzwerkverzeichnis "Shared MP3s" auf "My-Host".
+
+Die Darstellung der Attribute im erweiterten Format folgt das generelle Schema:
+
+  ±P* ±C* ±O* E?*
+
+Die Buchstaben P, C, O und E stehen jeweils für die Attribute "Privat", "Copyright", "Original" und "Emphase". Das Zeichen + vor einem Buchstabe zeigt, dass das entsprechende Attribut gesetzt ist; das Zeichen - zeigt, dass das Attribut nicht gesetzt ist.
+Die Einstellung der Emphase wird von dem Zeichen nach dem E deutlich gemacht: 0 = keine Emphase, 1 = 50/15 microsec, 2 = CCITT j. 17, x = ungültige Emphase.
+Wird die Option {0}W verwendet, so bedeutet ein Asteriskus nach einem Attribut, dass die Einstellungen des Attributes gleich in allen Frames der Datei sind.
+
+Das kompakte Format zeigt die selben Informationen wie das erweiterte Format in weniger Platz, es ist nur etwas komplizierter zum Lesen. Das kompakte Format benutzt einen Buchstaben für jedes Attribut in der Reihefolge: "Privat", "Copyright", "Original", "Emphase". Die verschiedenen Buchstaben haben folgende Bedeutung:
+
+  j = Emphase auf CCITT j. 17
+  m = Emphase auf 50/15 microsec
+  n = Attribut nicht gesetzt oder keine Emphase
+  x = ungültige Emphase
+  y = Attribut gesetzt
+
+Ein Großbuchstabe bedeutet, dass die Einstellungen des Attributes gleich in allen Frames der Datei sind.
+
+Obwohl Attributeinstellungen üblicherweise gleich für allen Frames einer MP3‐ Datei sind, ist dies nicht immer der Fall.
+Die von Winamp im Dialog Titelinformationen für MP3‐Dateien gezeigten Einstellungen sind die, die im zweiten Frame der Datei liegen: dies ist der Default‐Schlüssel‐Frame, derjenige, aus dem MP3epoc normalerweise seine Angaben bezieht um die Haupteinstellungen der Attribute zu zeigen oder um bestimmte Dateien aus der Suche auszuschließen wenn die Option {0}W weggelassen wird. Einige ältere Winamp‐Versionen sowie andere Anwendungen betrachten statt dessen den ersten Frame als Schlüssel‐Frame der Datei. Das selbe Verhalten kann mit MP3epoc durch Angabe der Option {0}F erreicht werden.</value>
+  </data>
+  <data name="SyntaxError" xml:space="preserve">
+    <value>Die Syntax des Befehls ist falsch.</value>
+  </data>
+  <data name="NoFile" xml:space="preserve">
+    <value>Es wurde keine Datei angegeben.</value>
+  </data>
+  <data name="PathTooLong" xml:space="preserve">
+    <value>Der Pfad {0} ist zu lang.</value>
+  </data>
+  <data name="PathIsDir" xml:space="preserve">
+    <value>Der Pfad {0} bezeichnet ein Verzeichnis.</value>
+  </data>
+  <data name="BadPath" xml:space="preserve">
+    <value>Das Format des Pfades {0} ist falsch.</value>
+  </data>
+  <data name="PathNotFound" xml:space="preserve">
+    <value>Der Pfad {0} wurde nicht gefunden.</value>
+  </data>
+  <data name="BadOption" xml:space="preserve">
+    <value>Einer der Parameter beginnt mit "{0}", ist aber keine gültige Option.</value>
+  </data>
+  <data name="BadAttribute" xml:space="preserve">
+    <value>Die Attributangabe "{0}" ist nicht gültig.</value>
+  </data>
+  <data name="DoubleAttribute" xml:space="preserve">
+    <value>Die Attributangabe "{0}" wurde wiederholt.</value>
+  </data>
+  <data name="MP3FormatException" xml:space="preserve">
+    <value>Beim Bearbeiten der Datei {0} an der Stelle {1} ist ein Fehler aufgetreten.</value>
+  </data>
+  <data name="MP3DataUnknownException" xml:space="preserve">
+    <value>Die Datei {0} enthält unbekannte Daten an der Stelle {1}.</value>
+  </data>
+  <data name="MP3FrameSizeUnknownException" xml:space="preserve">
+    <value>Die Größe des Frames {2} in der Datei {0} an der Stelle {1} kann nicht ermittelt werden.</value>
+  </data>
+  <data name="MP3FileInvalidException" xml:space="preserve">
+    <value>{0} ist keine MP3‐Datei.</value>
+  </data>
+  <data name="OptExInWritingOp" xml:space="preserve">
+    <value>Die Option {0}Ex kann nur zusammen mit den Optionen {0}L, {0}S, {0}W oder {0}F benutzt werden.</value>
+  </data>
+  <data name="AccessDenied" xml:space="preserve">
+    <value>Auf das Pfad {0} kann nicht zugegriffen werden.</value>
+  </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>FEHLER</value>
+  </data>
+  <data name="MP3FirstFrameNotFoundException" xml:space="preserve">
+    <value>Entweder die Größe der Datei {0} oder die Informationen im ID3v2‐Tag sind falsch.</value>
+  </data>
+  <data name="MP3FrameCRCUnknownException" xml:space="preserve">
+    <value>Der CRC‐Wert des Frames {2} in der Datei {0} an der Stelle {1} kann nicht neu gerechnet werden.</value>
+  </data>
+  <data name="MP3FrameCRCTestException" xml:space="preserve">
+    <value>Der Frame {2} in der Datei {0} an der Stelle {1} ist beschädigt und hat die CRC‐Prüfung nicht bestanden.</value>
+  </data>
+  <data name="MP3FrameException" xml:space="preserve">
+    <value>Beim Bearbeiten des Frames {2} in der Datei {0} an der Stelle {1} ist ein Fehler aufgetreten.</value>
+  </data>
+  <data name="FilesChanged0" xml:space="preserve">
+    <value>keine Änderungen notwendig</value>
+  </data>
+  <data name="FilesChanged1" xml:space="preserve">
+    <value>1 geändert</value>
+  </data>
+  <data name="FilesChangedMany" xml:space="preserve">
+    <value>{0} geändert</value>
+  </data>
+  <data name="FilesProcessed0" xml:space="preserve">
+    <value>Keine Dateien bearbeitet</value>
+  </data>
+  <data name="FilesProcessed1" xml:space="preserve">
+    <value>1 Datei bearbeitet</value>
+  </data>
+  <data name="FilesProcessedMany" xml:space="preserve">
+    <value>{0} Dateien bearbeitet</value>
+  </data>
+  <data name="FileChanged" xml:space="preserve">
+    <value>Die Datei wurde geändert</value>
+  </data>
+  <data name="FileNotChanged" xml:space="preserve">
+    <value>Keine Änderungen notwendig</value>
+  </data>
+  <data name="MP3KeyFrameNotFoundException" xml:space="preserve">
+    <value>Die Datei {0} hat keinen Schlüssel‐Frame.</value>
+  </data>
+  <data name="MP3GenericException" xml:space="preserve">
+    <value>Beim Bearbeiten der Datei {0} ist ein Fehler aufgetreten.</value>
+  </data>
+  <data name="BadOptionOrAttribute" xml:space="preserve">
+    <value>Einer der Parameter beginnt mit "-", ist aber weder eine gültige Option noch eine Attributangabe.</value>
+  </data>
+</root>

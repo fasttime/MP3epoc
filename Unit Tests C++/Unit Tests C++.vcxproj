@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A7B9E2DD-3703-461F-A1E3-D942EEFB2065}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MP3epoc</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\C++\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)C++</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <ResourceCompile>
+      <Culture>0x007f</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\C++\Char16Iterator.h" />
+    <ClInclude Include="..\C++\Finally.h" />
+    <ClInclude Include="..\C++\findAllFilePaths.h" />
+    <ClInclude Include="..\C++\MP3FormatException.h" />
+    <ClInclude Include="..\C++\processFile.h" />
+    <ClInclude Include="..\C++\shrinkTextWidth.h" />
+    <ClInclude Include="..\C++\xsys.h" />
+    <ClInclude Include="catch.hpp" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\C++\Char16Iterator.cpp" />
+    <ClCompile Include="..\C++\Finally.cpp" />
+    <ClCompile Include="..\C++\getResourceString.cpp" />
+    <ClCompile Include="..\C++\IMP3AttributeSetFormatInfo.cpp" />
+    <ClCompile Include="..\C++\MP3Attribute.cpp" />
+    <ClCompile Include="..\C++\MP3AttributeSet.cpp" />
+    <ClCompile Include="..\C++\MP3FormatException.cpp" />
+    <ClCompile Include="..\C++\MP3GearWheel.cpp" />
+    <ClCompile Include="..\C++\PathProcessor.cpp" />
+    <ClCompile Include="..\C++\processFile.cpp" />
+    <ClCompile Include="..\C++\shrinkTextWidth.cpp" />
+    <ClCompile Include="..\C++\toUpperASCII.cpp" />
+    <ClCompile Include="Unit Tests.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">0x007f</Culture>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(MessageResourceDir)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\C++\messages.mc">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mc.exe -c -n -u "%(FullPath)" -r "$(MessageResourceDir)" -h "$(MessageResourceDir)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(MessageResourceDir)\%(Filename).rc;$(MessageResourceDir)\%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
